@@ -1,4 +1,4 @@
-package level2.exercise1.mode;
+package level2.exercise1.model;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -49,7 +49,7 @@ public class Input {
 
         do {
             try {
-                System.out.print(message + " (usa punt per decimals, exemple: 3.14): ");
+                System.out.print(message + " (usa coma per decimals, exemple: 3,14): ");
                 value = scanner.nextDouble();
                 isValid = true;
             } catch (InputMismatchException e) {
@@ -80,6 +80,7 @@ public class Input {
 
         return value;
     }
+
     static class InvalidCharacterException extends Exception {
         public InvalidCharacterException(String message) {
             super(message);
@@ -110,6 +111,7 @@ public class Input {
 
         return value;
     }
+
     public static String readString(String message) {
         String input;
         boolean isValid = false;
@@ -151,5 +153,5 @@ public class Input {
             }
         } while (true);
     }
-    }
+}
 

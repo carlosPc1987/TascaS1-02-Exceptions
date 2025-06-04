@@ -1,6 +1,8 @@
-package level1.exercise1.mode;
+package level1.exercise1.aplication;
 
-import level1.exercise1.Exception.EmptySaleException;
+import level1.exercise1.model.exceptions.EmptySaleException;
+import level1.exercise1.model.Product;
+import level1.exercise1.model.Sale;
 
 import java.util.List;
 

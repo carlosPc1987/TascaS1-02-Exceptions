@@ -1,4 +1,4 @@
-package level1.exercise1.mode;
+package level1.exercise1.model;
 
 public class Product {
     private String name;

@@ -1,5 +1,5 @@
-package level1.exercise1.mode;
-import level1.exercise1.Exception.EmptySaleException;
+package level1.exercise1.model;
+import level1.exercise1.model.exceptions.EmptySaleException;
 
 import java.util.ArrayList;
 import java.util.List;

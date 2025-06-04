@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Sprint1.HerencyAndPolymorphism.iml" filepath="$PROJECT_DIR$/Sprint1.HerencyAndPolymorphism.iml" />
-      <module fileurl="file://$PROJECT_DIR$/TascaS1-02-Exceptions/src/level1/exercise1/TascaS1-02-Exceptions.iml" filepath="$PROJECT_DIR$/TascaS1-02-Exceptions/src/level1/exercise1/TascaS1-02-Exceptions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TascaS1-02-Exceptions/src/level1/TascaS1-02-Exceptions.iml" filepath="$PROJECT_DIR$/TascaS1-02-Exceptions/src/level1/TascaS1-02-Exceptions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TascaS1-03-Java-Collections/TascaS1-03-Java-Collections.iml" filepath="$PROJECT_DIR$/TascaS1-03-Java-Collections/TascaS1-03-Java-Collections.iml" />
     </modules>
   </component>
 </project>

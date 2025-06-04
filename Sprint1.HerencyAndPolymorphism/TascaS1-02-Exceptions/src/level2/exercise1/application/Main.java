@@ -1,11 +1,10 @@
-package level2.exercise1.aplication;
+package level2.exercise1.application;
 
-import level2.exercise1.mode.Input;
+import level2.exercise1.model.Input;
 
 
 public class Main {
     public static void main(String[] args) {
-        // Testing all methods
         byte age = Input.readByte("Introdueix la teva edat");
         System.out.println("Edat introduïda: " + age);
 
