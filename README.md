@@ -1,52 +1,51 @@
 
 # Tasca-S1-02-Exceptions
-Este repositorio contiene dos ejercicios diseñados para comprender y aplicar los conceptos de Exceptions en Java.
-- Las exceptions en programación son eventos inesperados que ocurren durante
-la ejecución de un programa. 
-Son utilizadas para manejar errores sin interrumpir
-el flujo del código.
-En Java, las excepciones son objetos que heredan de Throwable y se dividen en
-- checked(se deben manejar) 
-- unchecked (errores en tiempo de ejecución).
-Se pueden capturar con try-catch y lanzar con throw.
-También es posible definir excepciones personalizadas extendiendo Exception o RuntimeException.
-Un buen manejo de excepciones mejora la estabilidad y seguridad del software.
+Java · Excepciones con OOP
+Autor: Carlos de Cózar
+Temática: Programación Orientada a Objetos · Excepciones en Java
+Entorno: IntelliJ IDEA + JDK 21
+✦ Contenido del repositorio
+Este proyecto incluye dos ejercicios cuidadosamente diseñados para dominar el arte de capturar errores y validar entradas en Java. La teoría está bien, pero aquí aprenderás haciéndolo — generando, atrapando y entendiendo excepciones como todo un artesano del código.
+🔍 En Java, las excepciones permiten reaccionar ante errores sin que el programa se venga abajo. Se dividen en:
+- Checked → Obligatorio manejarlas (e.g. IOException)
+- Unchecked → Surgen en tiempo de ejecución (e.g. NullPointerException)
+¿Lo interesante? Tú también puedes crear tus propias excepciones a medida.
 
-- Nivell 1
-- Exercici 1
--Crea una classe anomenada "Producte" amb els atributs nom i preu, i una altra classe anomenada "Venda".
-Aquesta classe té com a atributs una col·lecció de productes i el preu total de la venda.
--La classe "Venda", té un mètode anomenat calcularTotal() que llança l’excepció personalitzada "VendaBuidaException"
-i mostra per pantalla “Per fer una venda primer has d’afegir productes” si la col·lecció de productes està buida.
-Si la col·lecció té productes, llavors ha de recórrer la col·lecció i guardar la suma
-de tots els preus dels productes a l’atribut preu total de la venda.
--L’excepció personalitzada "VendaBuidaException" ha de ser filla de la classe Exception.
-Al seu constructor li hem de passar el missatge  “Per fer una venda primer has d’afegir productes” 
-i quan capturem l’excepció, l’hem de mostrar per pantalla amb el mètode getMessage() de l’excepció.
-Escriu el codi necessari per a generar i capturar una excepció de tipus "IndexOutOfBoundsException".
+☰ Nivel 1 · Sistema de ventas
+Un ejercicio práctico con una historia sencilla:
+Sin productos no hay venta. Sin excepciones… tampoco.
+Clases:
+- Producte: nombre y precio
+- Venda: contiene productos y calcula el total
+Cuando la colección está vacía, se lanza una excepción personalizada:
+VendaBuidaException → “Per fer una venda primer has d’afegir productes”
+Además, se practica la captura de IndexOutOfBoundsException para afinar el control de errores.
 
-Nivell 2
-- Exercici 1
-Crea una classe anomenada "Entrada".
-Aquesta classe ha de servir per controlar les diferents excepcions que poden aparèixer en Java
-a l’hora d’introduir dades per teclat utilitzant la classe Scanner.
-El primer que s’ha de fer és instanciar un objecte de la classe Scanner i a partir d’aquí,
-crear mètodes estàtics per llegir els diferents tipus de dades des del teclat. 
-· Important
-És important que si en algun mètode salta una excepció, la tractem i tornem a demanar la dada a l’usuari/ària
-fins que aquesta estigui ben introduïda. Per exemple: Si introdueix un float amb un punt en lloc d'una coma, ha de mostrar “Error de format”.
-Fins que l’usuari/ària no introdueix un float ben format ha de seguir demanant la dada.
+⌨ Nivel 2 · Validación de entradas
+Entra la clase Entrada, tu compañera de batalla cuando el teclado quiere sabotear tus programas.
+Métodos numéricos (manejan InputMismatchException):
+- llegirByte(String)
+- llegirInt(String)
+- llegirFloat(String)
+- llegirDouble(String)
+Métodos textuales (lanzan InvalidInputException):
+- llegirChar(String)
+- llegirString(String)
+- llegirSiNo(String) — “s” → true, “n” → false
+Todos los métodos repreguntan automáticamente hasta que el dato sea correcto. Si hay errores de formato, lo comunican con claridad sin interrumpir el flujo.
 
--Tots els mètodes reben un String amb el missatge que es vol mostrar a l’usuari/ària,
-per exemple: “Introdueix la teva edat”, i retornen la dada oportuna introduïda per l’usuari/ària en cada mètode, 
-per exemple: un byte amb l’edat de l’usuari/ària.
+☑ Requisitos & Ejecución
+- Clona este repositorio
+git clone https://github.com//java-exercises.git
+- Ábrelo con IntelliJ
+- Selecciona el JDK 21
+- Ejecuta las clases Main de cada nivel
+- Testea escenarios con errores, listas vacías y entradas mal formateadas
 
-Mètodes a implantar capturant l’excepció de la classe "InputMismatchException":
-·public static byte llegirByte(String missatge);
-·public static int llegirInt(String missatge);
-·public static float llegirFloat(String missatge);
-·public static double llegirDouble(String missatge);
-·Mètodes a implantar capturant una excepció personalitzada de la classe Exception:
-·public static char llegirChar(String missatge);
-·public static String llegirString(String missatge);
-·public static boolean llegirSiNo(String missatge), si l’usuari/ària introdueix “s”, retorna “true”, si l’usuari/ària introdueix “n”, retorna “false”.
+🛠 Contribuir
+¿Quieres llevar este proyecto un paso más allá?
+- Haz un fork 🪄
+- Mejora el código 📦
+- Envía tu PR 📬
+- Déjale una estrella ⭐ si te resultó útil
+
