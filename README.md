@@ -1,11 +1,16 @@
 
 # Tasca-S1-02-Exceptions
 Java · Excepciones con OOP
+
 Autor: Carlos de Cózar
+
 Temática: Programación Orientada a Objetos · Excepciones en Java
+
 Entorno: IntelliJ IDEA + JDK 21
+
 ✦ Contenido del repositorio
 Este proyecto incluye dos ejercicios cuidadosamente diseñados para dominar el arte de capturar errores y validar entradas en Java. La teoría está bien, pero aquí aprenderás haciéndolo — generando, atrapando y entendiendo excepciones como todo un artesano del código.
+
 🔍 En Java, las excepciones permiten reaccionar ante errores sin que el programa se venga abajo. Se dividen en:
 - Checked → Obligatorio manejarlas (e.g. IOException)
 - Unchecked → Surgen en tiempo de ejecución (e.g. NullPointerException)
