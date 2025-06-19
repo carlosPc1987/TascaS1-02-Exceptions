@@ -1,56 +1,68 @@
 
-# Tasca-S1-02-Exceptions
-Java · Excepciones con OOP
+Java OOP & Input Validation Project
 
-Autor: Carlos de Cózar
+Autor Carlos de Cózar
 
-Temática: Programación Orientada a Objetos · Excepciones en Java
+Tecnología
 
-Entorno: IntelliJ IDEA + JDK 21
+Java 21
+IntelliJ IDEA
+Git
+Descripción
+Este proyecto muestra una aplicación orientada a objetos con un enfoque especial en el principio de responsabilidad única
+y el manejo robusto de entradas del usuario. 
+Se han aplicado los principios SOLID en el diseño del sistema de entrada, haciendo el código extensible, fácilmente testeable y alineado con buenas prácticas.
+Estructura por Niveles
 
-✦ Contenido del repositorio
-Este proyecto incluye dos ejercicios cuidadosamente diseñados para dominar el arte de capturar errores y validar entradas en Java. La teoría está bien, pero aquí aprenderás haciéndolo — generando, atrapando y entendiendo excepciones como todo un artesano del código.
+Nivel 1 - Product Sale System (No incluido en este proyecto, orientado a Nivel 2) 
+Nivel 2 - Input Validation System Objetivo Crear una clase Input que delegue la lectura de diferentes tipos de datos
+a lectores específicos que validan y gestionan excepciones apropiadamente. 
 
-🔍 En Java, las excepciones permiten reaccionar ante errores sin que el programa se venga abajo. Se dividen en:
-- Checked → Obligatorio manejarlas (e.g. IOException)
-- Unchecked → Surgen en tiempo de ejecución (e.g. NullPointerException)
-¿Lo interesante? Tú también puedes crear tus propias excepciones a medida.
+Requisitos cumplidos:
 
-☰ Nivel 1 · Sistema de ventas
-Un ejercicio práctico con una historia sencilla:
-Sin productos no hay venta. Sin excepciones… tampoco.
-Clases:
-- Producte: nombre y precio
-- Venda: contiene productos y calcula el total
-Cuando la colección está vacía, se lanza una excepción personalizada:
-VendaBuidaException → “Per fer una venda primer has d’afegir productes”
-Además, se practica la captura de IndexOutOfBoundsException para afinar el control de errores.
+·Lectura de tipos numéricos:
+·readByte(String message)
+·readInt(String message)
+·readFloat(String message)
+·readDouble(String message)
+·Lectura de tipos textuales:
+·readChar(String message)
+·readString(String message)
+·readYesNo(String message) ("s" → true, "n" → false)
+·Repregunta automática ante error de formato
+·Manejo de excepciones personalizado
+·Mensajes de error claros
+·Compatible con entrada de coma y punto decimal para decimales
+·Entrada centralizada vía fachada (Input) sin romper principios SOLID
+·Diseño extensible mediante interfaz InputReader Extra destacado Este proyecto va más allá de los mínimos propuestos:
+·Cumplimiento estricto de los principios SOLID
+·Separación total de responsabilidades entre lógica de entrada, validación y ejecución
+·Diseño extensible por tipo de dato, sin necesidad de modificar clases existentes
+·Formato de entrada decimal adaptable a diferentes configuraciones regionales
+·Encapsulamiento de ejecución: el Main solo invoca Program.executeProgram() para máxima limpieza
 
-⌨ Nivel 2 · Validación de entradas
-Entra la clase Entrada, tu compañera de batalla cuando el teclado quiere sabotear tus programas.
-Métodos numéricos (manejan InputMismatchException):
-- llegirByte(String)
-- llegirInt(String)
-- llegirFloat(String)
-- llegirDouble(String)
-Métodos textuales (lanzan InvalidInputException):
-- llegirChar(String)
-- llegirString(String)
-- llegirSiNo(String) — “s” → true, “n” → false
-Todos los métodos repreguntan automáticamente hasta que el dato sea correcto. Si hay errores de formato, lo comunican con claridad sin interrumpir el flujo.
+Ejecución
 
-☑ Requisitos & Ejecución
-- Clona este repositorio
-git clone https://github.com//java-exercises.git
-- Ábrelo con IntelliJ
-- Selecciona el JDK 21
-- Ejecuta las clases Main de cada nivel
-- Testea escenarios con errores, listas vacías y entradas mal formateadas
+Clona el repositorio: git clone 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀     https://github.com/carlosPc1987    🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 
-🛠 Contribuir
-¿Quieres llevar este proyecto un paso más allá?
-- Haz un fork 🪄
-- Mejora el código 📦
-- Envía tu PR 📬
-- Déjale una estrella ⭐ si te resultó útil
+Abre el proyecto en IntelliJ IDEA
 
+Asegúrate de tener configurado Java SDK 21
+
+Ejecuta la clase Main
+
+Prueba diferentes entradas, incluyendo casos erróneos Aprendizajes clave
+
+Principios SOLID aplicados a la entrada de datos
+
+Diseño desacoplado y mantenible
+
+Manejo de excepciones enfocado al usuario
+
+Adaptabilidad de sistemas orientados a consola Contribuciones Bienvenidas. 
+Si quieres proponer mejoras o usar este enfoque para tu propio proyecto, puedes hacer fork y personalizarlo.
+
+🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
+
+
+-🚀🚀🚀🚀🚀🚀🚀 CarlosPc1987🚀🚀🚀🚀🚀🚀🚀
