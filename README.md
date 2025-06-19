@@ -4,17 +4,12 @@ Java OOP & Input Validation Project
 Autor Carlos de Cózar
 
 
-
-                     _
- __(.)<
- \___)                                _
- __(.)<
- \___)                        _
- __(.)<                                    -
- \___)                    
-    
- __(.)<            -
- \___)
+```text
+ //=============================\\
+||   Crafted with 💛 by Carlos   ||
+||     and approved by 🦆       ||
+ \\=============================//
+```
 
 
 # Product Sale & Input System
@@ -83,6 +78,16 @@ Este proyecto demuestra una aplicación orientada a objetos con foco en el princ
 ## Contribuciones
 
 Las contribuciones están abiertas. Si deseas proponer mejoras o utilizar este enfoque en tus propios proyectos, siéntete libre de hacer un fork y personalizarlo según tus necesidades.
+
+
+```text
+ //=============================\\
+||   Crafted with 💛 by Carlos   ||
+||     and approved by 🦆       ||
+ \\=============================//
+```
+
+
 
 ---
 
