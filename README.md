@@ -3,6 +3,20 @@ Java OOP & Input Validation Project
 
 Autor Carlos de Cózar
 
+
+
+                     _
+ __(.)<
+ \___)                                _
+ __(.)<
+ \___)                        _
+ __(.)<                                    -
+ \___)                    
+    
+ __(.)<            -
+ \___)
+
+
 # Product Sale & Input System
 
 ## Autor
