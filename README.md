@@ -3,66 +3,74 @@ Java OOP & Input Validation Project
 
 Autor Carlos de Cózar
 
-Tecnología
+# Product Sale & Input System
 
-Java 21
-IntelliJ IDEA
-Git
-Descripción
-Este proyecto muestra una aplicación orientada a objetos con un enfoque especial en el principio de responsabilidad única
-y el manejo robusto de entradas del usuario. 
-Se han aplicado los principios SOLID en el diseño del sistema de entrada, haciendo el código extensible, fácilmente testeable y alineado con buenas prácticas.
-Estructura por Niveles
+## Autor
+Carlos de Cózar
 
-Nivel 1 - Product Sale System (No incluido en este proyecto, orientado a Nivel 2) 
-Nivel 2 - Input Validation System Objetivo Crear una clase Input que delegue la lectura de diferentes tipos de datos
-a lectores específicos que validan y gestionan excepciones apropiadamente. 
+## Tecnología utilizada
+- Java 21  
+- IntelliJ IDEA  
+- Git  
 
-Requisitos cumplidos:
+## Descripción general
+Este proyecto demuestra una aplicación orientada a objetos con foco en el principio de responsabilidad única, el diseño extensible y el manejo robusto de entradas del usuario. Se ha aplicado rigurosamente el conjunto de principios SOLID, permitiendo una arquitectura mantenible, testeable y clara.
 
-·Lectura de tipos numéricos:
-·readByte(String message)
-·readInt(String message)
-·readFloat(String message)
-·readDouble(String message)
-·Lectura de tipos textuales:
-·readChar(String message)
-·readString(String message)
-·readYesNo(String message) ("s" → true, "n" → false)
-·Repregunta automática ante error de formato
-·Manejo de excepciones personalizado
-·Mensajes de error claros
-·Compatible con entrada de coma y punto decimal para decimales
-·Entrada centralizada vía fachada (Input) sin romper principios SOLID
-·Diseño extensible mediante interfaz InputReader Extra destacado Este proyecto va más allá de los mínimos propuestos:
-·Cumplimiento estricto de los principios SOLID
-·Separación total de responsabilidades entre lógica de entrada, validación y ejecución
-·Diseño extensible por tipo de dato, sin necesidad de modificar clases existentes
-·Formato de entrada decimal adaptable a diferentes configuraciones regionales
-·Encapsulamiento de ejecución: el Main solo invoca Program.executeProgram() para máxima limpieza
+---
 
-Ejecución
+## Estructura por niveles
 
-Clona el repositorio: git clone 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀     https://github.com/carlosPc1987    🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
+### Nivel 1 - Product Sale System
 
-Abre el proyecto en IntelliJ IDEA
+| Elemento                         | Descripción                                                                                                                                           |
+|----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Objetivo**                     | Simulación de una venta con productos, aplicando orientación a objetos y manejo de excepciones personalizadas.                                        |
+| **Flujo principal**              | - Venta vacía<br>- Comprobación y lanzamiento de `EmptySaleException` si no hay productos<br>- Agregado de productos<br>- Cálculo de total<br>- Manejo de `IndexOutOfBoundsException` |
+| **Clases involucradas**          | `Program`, `Sale`, `Product`, `EmptySaleException`                                                                                                   |
+| **Principios aplicados**         | Responsabilidad única, encapsulamiento del flujo de ejecución, diseño limpio y testeable.                                                            |
+| **Buenas prácticas destacadas**  | Separación de lógica, validación y entrada. Entrada unificada vía fachada. Cumplimiento estricto de principios SOLID.                                |
 
-Asegúrate de tener configurado Java SDK 21
+---
 
-Ejecuta la clase Main
+### Nivel 2 - Input Validation System
 
-Prueba diferentes entradas, incluyendo casos erróneos Aprendizajes clave
+| Elemento                         | Descripción                                                                                                                                           |
+|----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Objetivo**                     | Crear una clase `Input` que delegue la lectura de distintos tipos de datos a lectores específicos encargados de validar entradas y gestionar excepciones. |
+| **Tipos de datos soportados**    | - Numéricos: `readByte`, `readInt`, `readFloat`, `readDouble`<br>- Textuales: `readChar`, `readString`, `readYesNo` (`"s"` = true, `"n"` = false)     |
+| **Manejo de errores**            | - Repregunta automática ante errores de formato<br>- Mensajes de error descriptivos<br>- Manejo de excepciones personalizado                          |
+| **Compatibilidad regional**      | Soporte para coma o punto como separador decimal                                                                                                      |
+| **Diseño extensible**            | - Entrada centralizada vía `Input`, respetando SOLID<br>- Interfaz `InputReader` que permite extender la lógica sin modificar clases existentes      |
+| **Extra destacado**              | - Separación clara entre lógica, entrada y validación<br>- Adaptabilidad internacional<br>- Código preparado para escalabilidad futura               |
 
-Principios SOLID aplicados a la entrada de datos
+---
 
-Diseño desacoplado y mantenible
+## Ejecución del proyecto
 
-Manejo de excepciones enfocado al usuario
+1. Clona el repositorio:
 
-Adaptabilidad de sistemas orientados a consola Contribuciones Bienvenidas. 
-Si quieres proponer mejoras o usar este enfoque para tu propio proyecto, puedes hacer fork y personalizarlo.
+   
+2. Abre el proyecto en IntelliJ IDEA  
+3. Asegúrate de tener configurado el SDK de Java 21  
+4. Ejecuta la clase `Main`  
+5. Prueba diferentes entradas, incluyendo casos erróneos
 
-🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
+---
 
+## Aprendizajes clave
 
--🚀🚀🚀🚀🚀🚀🚀 CarlosPc1987🚀🚀🚀🚀🚀🚀🚀
+- Aplicación práctica de los principios SOLID
+- Arquitectura desacoplada, limpia y mantenible
+- Gestión de excepciones centrada en el usuario
+- Flexibilidad para adaptarse a distintas configuraciones regionales en sistemas orientados a consola
+
+---
+
+## Contribuciones
+
+Las contribuciones están abiertas. Si deseas proponer mejoras o utilizar este enfoque en tus propios proyectos, siéntete libre de hacer un fork y personalizarlo según tus necesidades.
+
+---
+
+**Repositorio oficial:**  
+[github.com/carlosPc1987](https://github.com/carlosPc1987)
